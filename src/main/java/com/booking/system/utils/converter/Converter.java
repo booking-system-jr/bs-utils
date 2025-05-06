@@ -31,7 +31,7 @@ public interface Converter<E, D> {
      * @param dto DTO with new data
      * @return updated entity
      */
-    E updateEntityFromDto(E entity, D dto);
+    void updateEntityFromDto(E entity, D dto);
 
     /**
      * Converts collection of entities to list of DTOs
